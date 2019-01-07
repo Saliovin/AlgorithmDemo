@@ -1,9 +1,19 @@
-import Search.*;
+import Sort.*;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        Binary test = new Binary();
-        int[] array = {1, 5, 10, 15, 20, 25};
-        System.out.println(test.search(array, 25));
+        Bubble test = new Bubble();
+        Random rng = new Random();
+
+        int[] array = new int[20];
+
+        for(int i = 0; i < array.length; i++) {
+            array[i] = rng.nextInt(100);
+        }
+
+        for(int i : test.sort(array)) {
+            System.out.println(i);
+        }
     }
 }
