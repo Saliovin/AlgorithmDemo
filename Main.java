@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        Bubble test = new Bubble();
+        Insertion test = new Insertion();
         Random rng = new Random();
 
         int[] array = new int[20];
