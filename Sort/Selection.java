@@ -3,7 +3,7 @@ package Sort;
 public class Selection extends SortAlgorithm {
 
     @Override
-    public int[] sort(int[] array) {
+    public void sort(int[] array) {
         for(int i = 0; i < array.length; i++) {
             int lowest = i;
 
@@ -15,7 +15,5 @@ public class Selection extends SortAlgorithm {
 
             array = super.swap(array, i, lowest);
         }
-
-        return array;
     }
 }

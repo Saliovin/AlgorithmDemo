@@ -2,7 +2,7 @@ package Sort;
 
 public abstract class SortAlgorithm {
 
-    abstract int[] sort(int[] array);
+    abstract void sort(int[] array);
 
     int[] swap(int[] array, int a, int b) {
         int temp = array[a];
